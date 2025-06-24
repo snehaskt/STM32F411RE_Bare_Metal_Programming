@@ -31,7 +31,7 @@ typedef struct
 
 
 
-#define RCC			((RCC_TypeDef*) RCC_BASE)
+#define RCC		((RCC_TypeDef*) RCC_BASE)
 #define	GPIOA		((GPIOA_TypeDef*)GPIOA_BASE)
 
 
