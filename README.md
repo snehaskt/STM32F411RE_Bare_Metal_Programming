@@ -25,6 +25,12 @@ To strengthen embedded systems development skills by:
 - Drives output pins using GPIO register configuration
 - Demonstrates bit manipulation, `MODER`, `ODR` usage
 
+### 3. **GPIO Control using BSRR Register**
+- This project demonstrates GPIO output pin control using the **BSRR (Bit Set/Reset Register)** on the STM32F411RE microcontroller.
+- Instead of using the `ODR` register for setting or clearing output pins, this project utilizes `BSRR` for **atomic pin manipulation**.
+- Helps avoid **read-modify-write hazards** in real-time embedded systems.
+- Written using **bare-metal Embedded C** with direct register access, no HAL or LL libraries.
+
 ---
 
 ## ⚙️ Tools Used
