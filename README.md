@@ -34,7 +34,7 @@ To strengthen embedded systems development skills by:
 ### 4. **GPIO Input (Button Read)**
 - Configures GPIO pin as **input** to read external button state
 - Demonstrates pull-down resistor config and input reading via IDR
-- Prints button state over debug (if used) or toggles output based on input
+- Toggles output based on input
 - Fully written in **bare-metal C** using STM32 register definitions
 
 ---
