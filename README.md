@@ -42,6 +42,10 @@ To strengthen embedded systems development skills by:
 - Uses TXE flag to ensure data register is ready before sending
 - Written in bare-metal C using register definitions (no HAL)
 
+### 7. **UART TX Modular Driver**
+- Implements UART transmission using a modular driver architecture
+- Separates initialization and transmit functions into reusable components
+- Written in pure Embedded C using STM32 register-level access (no HAL)
 
 
 ---
