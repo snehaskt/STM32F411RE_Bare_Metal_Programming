@@ -47,6 +47,11 @@ To strengthen embedded systems development skills by:
 - Separates initialization and transmit functions into reusable components
 - Written in pure Embedded C using STM32 register-level access (no HAL)
 
+### 8. **UART TX/RX Modular Driver**
+- Implements UART transmit and receive using polling (TXE and RXNE)
+- Fully modular: separates config, send, and receive functions
+- Register-level firmware (no HAL) using CMSIS headers
+
 
 ---
 
