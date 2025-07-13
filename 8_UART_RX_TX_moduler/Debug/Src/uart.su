@@ -1,0 +1,6 @@
+../Src/uart.c:45:6:uart2_read	4	static
+../Src/uart.c:54:6:uart2_write	16	static
+../Src/uart.c:65:6:uart2_rxtx_init	8	static
+../Src/uart.c:126:13:Uart_set_baudrate	24	static
+../Src/uart.c:132:18:compute_uart_bd	16	static
+../Src/uart.c:138:6:delay	16	static
