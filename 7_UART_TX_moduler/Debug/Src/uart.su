@@ -1,0 +1,4 @@
+../Src/uart.c:40:6:uart2_write	16	static
+../Src/uart.c:50:6:uart2_tx_init	4	static
+../Src/uart.c:75:9:send_uart_message	16	static
+../Src/uart.c:84:9:delay	16	static
