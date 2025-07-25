@@ -53,6 +53,22 @@ To strengthen embedded systems development skills by:
 - Register-level firmware (no HAL) using CMSIS headers
 
 
+### 9. **ADC - Single Conversion Mode**
+- Demonstrates single conversion of analog input using ADC
+- Uses PA1 as analog input pin
+- Basic bare-metal ADC configuration and reading
+
+### 9.0 **ADC - Continuous Conversion Mode**
+- Demonstrates continuous ADC conversion without software trigger
+- ADC continuously updates data register with latest analog value
+- Helps in real-time sensor tracking applications
+
+### 9.1. **ADC - LDR Sensor Interfacing**
+- Reads analog light level from an LDR sensor
+- Displays "Light is ON" or "Light is OFF" via UART based on threshold
+- Shows practical use-case of sensor and ADC integration
+
+
 ---
 
 ## ⚙️ Tools Used
