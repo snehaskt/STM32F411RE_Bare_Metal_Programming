@@ -71,6 +71,23 @@ To strengthen embedded systems development skills by:
 
 ---
 
+
+### 10. **System Tick Timer (SysTick)**
+
+- Implements the **Cortex-M4's internal SysTick timer** to create precise time delays  
+- Configured using registers: `CTRL`, `LOAD`, and `VAL`  
+- No HAL/LL used — purely **bare-metal register-level programming**
+- Useful in:
+  - Creating time delays
+  - Task scheduling in RTOS
+  - Generating periodic interrupts
+- Demonstrates how to:
+  - Enable the SysTick timer
+  - Generate delay using polling
+  - Understand internal system timer operation of ARM Cortex-M cores
+
+---
+
 ## ⚙️ Tools Used
 
 - **Microcontroller**: STM32F411RE (ARM Cortex-M4)
@@ -89,4 +106,5 @@ To strengthen embedded systems development skills by:
 - Using CMSIS-style register maps
 - Interrupt configuration with NVIC
 - Linking, flashing, and debugging without HAL
+
 
