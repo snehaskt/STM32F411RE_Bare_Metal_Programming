@@ -88,6 +88,15 @@ To strengthen embedded systems development skills by:
 
 ---
 
+
+### 11. **TIM2 General Purpose Timer**
+- Demonstrates configuration of TIM2 as a 32-bit up/down counter
+- Uses 16-bit prescaler to generate periodic events
+- Compared with SysTick Timer to highlight differences
+- Implemented in bare-metal C (no HAL/LL)
+---
+
+
 ## ⚙️ Tools Used
 
 - **Microcontroller**: STM32F411RE (ARM Cortex-M4)
