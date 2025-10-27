@@ -96,6 +96,43 @@ To strengthen embedded systems development skills by:
 - Implemented in bare-metal C (no HAL/LL)
 ---
 
+# 12.1 – STM32 Timer Output Compare Driver (Bare-Metal)
+
+## Overview
+This project demonstrates register-level configuration of STM32F411RE TIM2 in Output Compare mode to generate precise square wave signals and toggle an LED at programmable intervals.
+
+## Features
+- Timer initialized for output compare on GPIO
+- Square wave generation using ARR, PSC, CCRx registers
+- Real-time control of output frequency and waveform duty cycle
+- Controlled via CR1_CEN, interrupt service routines for efficient timing
+
+## Technical Highlights
+- Direct peripheral access and bitwise register manipulation
+- Configurable timing with ARR (Auto-reload), PSC (Prescaler), CCR1 (Compare)
+- Bare-metal interrupt-driven firmware (no HAL/LL libraries)
+- Sample code for toggling output pin, waveform generation, and timing accuracy analysis
+---
+
+
+# 12.2 – STM32 Timer Input Capture Driver (Bare-Metal)
+
+## Overview
+This project demonstrates how to measure external signal period and frequency using STM32F411RE TIM2 input capture. Rising edges on a GPIO pin are logged, allowing precise frequency analysis of external events.
+
+## Features
+- Configures TIM2 in input capture mode on designated pin
+- Captures and measures time between external signal edges
+- Calculates input period and frequency in real time
+- Uses CCMR1, CCER, CNT, CCRx registers for capture logic
+
+## Technical Highlights
+- Direct manipulation of timer and capture registers
+- Interrupt-driven edge detection, event timestamping
+- Real-time display of measured frequency via serial/terminal
+- Example interface for connecting external pulse or sensor input
+---
+
 
 ## ⚙️ Tools Used
 
