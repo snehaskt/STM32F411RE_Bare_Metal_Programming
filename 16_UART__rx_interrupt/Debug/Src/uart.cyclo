@@ -1,0 +1,5 @@
+../../Drivers/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Core/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Src/uart.c:50:6:uart2_rxtx_init	1
+../Src/uart.c:84:6:uart2_rx_interrupt_init	1
+../Src/uart.c:124:9:uart2_write	2
+../Src/uart.c:131:9:send_uart_message	2

@@ -1,0 +1,3 @@
+../Src/uart.c:45:6:uart2_rxtx_init	4	static
+../Src/uart.c:77:9:uart2_write	16	static
+../Src/uart.c:84:9:send_uart_message	16	static

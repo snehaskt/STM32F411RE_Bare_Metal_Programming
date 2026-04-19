@@ -132,7 +132,104 @@ This project demonstrates how to measure external signal period and frequency us
 - Real-time display of measured frequency via serial/terminal
 - Example interface for connecting external pulse or sensor input
 ---
+---
 
+### 13. Output Compare (Advanced)
+
+- Extends basic output compare functionality with multiple configurations
+- Demonstrates different OC modes (toggle, set, reset)
+- Uses timer channels for waveform generation
+- Implemented using direct register access (no HAL/LL)
+- Useful in:
+  - Signal generation
+  - PWM base understanding
+- Demonstrates how to:
+  - Configure different output compare modes
+  - Modify output behavior dynamically
+  - Understand CCR and ARR interaction
+
+---
+
+### 14. Input Capture
+
+- Demonstrates Timer Input Capture mode for measuring external signal timing
+- Captures timer value on input signal edge (rising/falling)
+- Uses CCR (Capture/Compare Register) to store captured value
+- Implemented using bare-metal register-level configuration
+- Useful in:
+  - Frequency measurement
+  - Pulse width measurement
+  - Signal timing analysis
+- Demonstrates how to:
+  - Configure timer in input capture mode
+  - Select edge detection (rising/falling)
+  - Read captured timer value from CCR
+  - Calculate time period and frequency
+---
+
+### 15. Input Interrupt (EXTI)
+
+- Demonstrates external interrupt configuration using GPIO
+- Uses EXTI line mapped to GPIO pin
+- Configures NVIC for interrupt handling
+- Implemented using bare-metal approach
+- Useful in:
+  - Button press detection
+  - Event-driven systems
+- Demonstrates how to:
+  - Configure EXTI line
+  - Enable NVIC interrupt
+  - Handle interrupt in ISR
+
+---
+
+### 16. UART RX Interrupt
+
+- Implements UART receive using interrupt mechanism
+- Enables RXNE interrupt for data reception
+- Handles incoming data inside ISR
+- No polling used — fully interrupt-driven
+- Useful in:
+  - Efficient serial communication
+  - Non-blocking data reception
+- Demonstrates how to:
+  - Enable UART RX interrupt
+  - Configure NVIC for UART
+  - Process received data in ISR
+
+---
+
+### 17. ADC Interrupt
+
+- Implements ADC conversion using interrupt mode
+- Triggers interrupt on End of Conversion (EOC)
+- Avoids polling for ADC data
+- Implemented using register-level configuration
+- Useful in:
+  - Sensor data acquisition
+  - Real-time embedded systems
+- Demonstrates how to:
+  - Enable ADC interrupt
+  - Configure EOC interrupt
+  - Read ADC value inside ISR
+
+---
+
+### 18. SysTick Interrupt
+
+- Implements periodic interrupt using Cortex-M SysTick timer
+- Generates interrupts at fixed intervals
+- Uses CTRL, LOAD, and VAL registers
+- Implemented in bare-metal without HAL/LL
+- Useful in:
+  - Time base generation
+  - Task scheduling
+- Demonstrates how to:
+  - Enable SysTick interrupt (TICKINT)
+  - Configure reload value
+  - Handle SysTick_Handler for periodic execution
+
+---
 
 ## ⚙️ Tools Used
 

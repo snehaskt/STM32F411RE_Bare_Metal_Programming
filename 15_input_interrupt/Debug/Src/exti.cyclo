@@ -1,0 +1,2 @@
+../../Drivers/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Core/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Src/exti.c:12:6:pc13_exti_init	1
